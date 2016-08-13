@@ -1,0 +1,10 @@
+SECTIONS
+{
+	.text 0x12340000 : AT(0x12340000) {
+	      code = .;
+	      *(.text.startup)
+	      *(.text)
+	      *(.rodata)
+	      *(.data)
+	}
+}
